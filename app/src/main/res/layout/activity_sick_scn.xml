@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.robles.handicapp.SickScn">
+
+    <Button
+    android:id="@+id/btn_fev"
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+        android:onClick="callFeveScn"
+    android:text="FEVER"
+    android:textColor="@android:color/background_light"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/btn_flu"
+        android:layout_alignStart="@+id/btn_flu" />
+
+    <Button
+        android:id="@+id/btn_flu"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="callFluScn"
+        android:text="Flu"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/btn_fev"
+        android:layout_alignLeft="@+id/home"
+        android:layout_alignStart="@+id/home"
+        android:layout_marginTop="23dp" />
+    <Button
+        android:id="@+id/btn_coug"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="callCougScn"
+        android:text="Cough"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/btn_flu"
+        android:layout_alignLeft="@+id/btn_flu"
+        android:layout_alignStart="@+id/btn_flu"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:id="@+id/btn_cold"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="callColdScn"
+        android:text="Cold"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/btn_coug"
+        android:layout_alignStart="@+id/btn_coug" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Sickness"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_red_light" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/img1" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:onClick="callMainScn"
+        android:text="Home" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/img2"
+        android:layout_alignBottom="@+id/btn_flu"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignTop="@+id/btn_coug"
+        app:srcCompat="@drawable/img3" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignTop="@+id/btn_cold"
+        app:srcCompat="@drawable/img4" />
+
+</RelativeLayout>
